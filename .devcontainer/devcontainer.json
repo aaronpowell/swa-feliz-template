@@ -1,0 +1,33 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.187.0/containers/azure-static-web-apps
+{
+	"name": "Feliz SWA Template",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			// Options
+			"NODE_VERSION": "lts/*"
+		}
+	},
+	"forwardPorts": [ 7071, 4280 ],
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": {},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"ms-azuretools.vscode-azurefunctions",
+		"ms-azuretools.vscode-azurestaticwebapps",
+		"ms-dotnettools.csharp",
+		"ms-python.python",
+		"ionide.ionide-fsharp",
+		"ionide.ionide-paket",
+		"ms-edgedevtools.vscode-edge-devtools"
+	],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "dotnet tool restore && dotnet paket install && npm install",
+
+	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "vscode"
+}

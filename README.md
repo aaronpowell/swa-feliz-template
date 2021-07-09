@@ -1,6 +1,6 @@
 # Azure Static Web Apps Feliz Template
 
-This repository contains a template for creating an [Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=dotnet-0000-aapowell) projects using Feliz, Paket and F# Azure Functions.
+This repository contains a template for creating an [Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=dotnet-33392-aapowell) projects using Feliz, Paket and F# Azure Functions.
 
 To get started, click the **Use this template** button to create a repository from this template, and check out the [GitHub docs on using templates](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 
@@ -8,7 +8,7 @@ To get started, click the **Use this template** button to create a repository fr
 
 From within VS Code run the **Launch it all 🚀** Debug configuration to start the Fable app, Azure Functions, Static Web Apps CLI and debuggers.
 
-It's recommended that you use a [VS Code Remote Container](https://code.visualstudio.com/docs/remote/containers?WT.mc_id=dotnet-00000-aapowell) for development, as it will setup all the required dependencies and VS Code extensions.
+It's recommended that you use a [VS Code Remote Container](https://code.visualstudio.com/docs/remote/containers?WT.mc_id=dotnet-33392-aapowell) for development, as it will setup all the required dependencies and VS Code extensions.
 
 ### Manual Environment Setup
 
@@ -38,7 +38,7 @@ Then you can navigate to `http://localhost:4280` to access the emulator.
 
 ## Deploying to Static Web Apps
 
-To deploy a site on [Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=dotnet-0000-aapowell) using this template, you'll need to customise the build pipeline that is generated for you to build the web app outside of the Static Web Apps task (the Azure Function componet will build fine). This is because it does not detect that the project needs both Node.js and .NET installed, resulting in only Node.js being installed.
+To deploy a site on [Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=dotnet-33392-aapowell) using this template, you'll need to customise the build pipeline that is generated for you to build the web app outside of the Static Web Apps task (the Azure Function componet will build fine). This is because it does not detect that the project needs both Node.js and .NET installed, resulting in only Node.js being installed.
 
 Here is a sample `build_and_deploy_job`:
 
